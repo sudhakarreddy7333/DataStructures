@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSAlgorithms", "DSAlgorithms.csproj", "{C5B1085D-6ADB-492C-94EE-1296069AEC2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POCs", "..\POCs\POCs.csproj", "{BEDF6678-7BF0-4406-895A-693DD0B9903B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5B1085D-6ADB-492C-94EE-1296069AEC2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5B1085D-6ADB-492C-94EE-1296069AEC2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5B1085D-6ADB-492C-94EE-1296069AEC2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5B1085D-6ADB-492C-94EE-1296069AEC2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEDF6678-7BF0-4406-895A-693DD0B9903B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEDF6678-7BF0-4406-895A-693DD0B9903B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEDF6678-7BF0-4406-895A-693DD0B9903B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEDF6678-7BF0-4406-895A-693DD0B9903B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3120786-7873-4860-B26A-19C9A042DAC3}
+	EndGlobalSection
+EndGlobal

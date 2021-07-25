@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\sbalreddy\\Source\\repos\\DSAlgorithms\\DSAlgorithms.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\sbalreddy\\Source\\repos\\DSAlgorithms\\DSAlgorithms.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sbalreddy\\Source\\repos\\DSAlgorithms\\DSAlgorithms.csproj",
+        "projectName": "DSAlgorithms",
+        "projectPath": "C:\\Users\\sbalreddy\\Source\\repos\\DSAlgorithms\\DSAlgorithms.csproj",
+        "packagesPath": "C:\\Users\\sbalreddy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sbalreddy\\Source\\repos\\DSAlgorithms\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sbalreddy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+          "\\\\pc.factset.com\\dfs\\Department\\Information Systems\\Core\\Core-Packages": {},
+          "http://artifactory.factset.com/artifactory/api/nuget/nuget": {},
+          "http://istfs.pc.factset.com:8060/nuget": {},
+          "http://istfs.pc.factset.com:8060/private/ISCorePrivatepackages/nuget/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Quartz": {
+              "target": "Package",
+              "version": "[3.3.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
