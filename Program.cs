@@ -1,4 +1,5 @@
-﻿using DSAlgorithms.Programs.LinkedList;
+﻿using DSAlgorithms.Programs.Arrays;
+using DSAlgorithms.Programs.LinkedList;
 using DSAlgorithms.Programs.Recursion;
 using DSAlgorithms.Sort;
 using System;
@@ -10,8 +11,16 @@ namespace DSAlgorithms
     {
         static void Main(string[] args)
         {
-            Recursion r = new Recursion();
-            r.TOH(1, 1,2,3);
+            ArrayADT adt = new ArrayADT();
+            adt.Add(10);
+            adt.Add(15);
+            adt.Add(20);
+            adt.Add(30);
+            adt.Add(42);
+            adt.Add(45);
+            adt.Add(50);
+
+            Console.WriteLine(adt.ShiftLeft());
         }
 
         private static void HeapSort()
