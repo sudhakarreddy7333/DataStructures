@@ -40,9 +40,38 @@ namespace DSAlgorithms.Programs.Arrays
             return null;
         }
 
-        //public ArrayADT InsertInSortedArray(ArrayADT arr)
-        //{
+        public ArrayADT Merge(ArrayADT a1, ArrayADT a2)
+        {
+            if(a1 != null && a2 != null)
+            {
+                int i = 0, j = 0, k = 0;
+                ArrayADT mergedArray = new ArrayADT();
 
-        //}
+                while(i<a1.Length && j<a2.Length)
+                {
+                    if (a1[i] <= a2[j])
+                    {
+                        mergedArray[k++] = a1[i++];
+                    }
+                    else
+                    {
+                        mergedArray[k++] = a2[j++];
+                    }
+                }
+
+                while (i < a1.Length)
+                {
+                    mergedArray[k++] = a1[i++];
+                }
+
+                while (j < a2.Length)
+                {
+                    mergedArray[k++] = a2[j++];
+                }
+
+                return mergedArray;
+            }
+            return null;
+        }
     }
 }
