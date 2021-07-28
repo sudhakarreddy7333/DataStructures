@@ -16,6 +16,13 @@ namespace DSAlgorithms.Programs.Arrays
             Arr = new int[Capacity];
         }
 
+        public ArrayADT(int size)
+        {
+            Length = 0;
+            Capacity = size;
+            Arr = new int[Capacity];
+        }
+
         public void Add(int value)
         {
             if(Length<Capacity)
@@ -172,5 +179,19 @@ namespace DSAlgorithms.Programs.Arrays
             }
         }
 
+        public ArrayADT Union(ArrayADT second)
+        {
+            return new SetOperations().Union(this, second);
+        }
+
+        public ArrayADT Intersection(ArrayADT second)
+        {
+            return new SetOperations().Intersection(this, second);
+        }
+
+        public ArrayADT Difference(ArrayADT second)
+        {
+            return new SetOperations().Difference(this, second);
+        }
     }
 }

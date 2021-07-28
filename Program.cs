@@ -12,19 +12,13 @@ namespace DSAlgorithms
         static void Main(string[] args)
         {
             ArrayADT adt = new ArrayADT();
-            adt.Add(1);
             adt.Add(2);
             adt.Add(4);
-            adt.Add(5);
+            adt.Add(7);
+            adt.Add(8);
+            adt.Add(10);
 
-            ArrayADT adt2 = new ArrayADT();
-
-            adt2.Add(0);
-            adt2.Add(2);
-            adt2.Add(3);
-            adt2.Add(4);
-            adt2.Add(6);
-            var mergedArray = new ArrayShift().Merge(adt,adt2);
+            var mergedArray = new ArrayProblems().MultipleMissingElementsHash(adt);
         }
 
         private static void HeapSort()
