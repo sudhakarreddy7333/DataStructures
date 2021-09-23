@@ -1,6 +1,11 @@
 ﻿using DSAlgorithms.Programs.Arrays;
+using DSAlgorithms.Programs.Arrays.Hard;
+using DSAlgorithms.Programs.Arrays.Medium;
+using DSAlgorithms.Programs.Arrays.RangeQueries;
+using DSAlgorithms.Programs.Arrays.Sorting;
 using DSAlgorithms.Programs.LinkedList;
 using DSAlgorithms.Programs.Recursion;
+using DSAlgorithms.Programs.Strings;
 using DSAlgorithms.Sort;
 using System;
 using System.Collections.Generic;
@@ -11,14 +16,9 @@ namespace DSAlgorithms
     {
         static void Main(string[] args)
         {
-            ArrayADT adt = new ArrayADT();
-            adt.Add(2);
-            adt.Add(4);
-            adt.Add(7);
-            adt.Add(8);
-            adt.Add(10);
-
-            var mergedArray = new ArrayProblems().MultipleMissingElementsHash(adt);
+            StringPermutations ms = new StringPermutations();
+            ms.PrintPermutations("abcde");
+           
         }
 
         private static void HeapSort()

@@ -46,7 +46,7 @@ namespace DSAlgorithms.Programs.Arrays
             {
                 return Arr[index];
             }
-            return -1;
+            throw new IndexOutOfRangeException($"Element with index {index} was not found in the array");
         }
 
         private void Insert(int index, int value)
@@ -86,6 +86,10 @@ namespace DSAlgorithms.Programs.Arrays
                     Arr[i] = Arr[i+1];
                 }
                 Length--;
+            }
+            else
+            {
+                throw new IndexOutOfRangeException($"Element with index {index} was not found in the array");
             }
         }
 
