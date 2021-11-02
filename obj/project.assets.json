@@ -783,10 +783,6 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
-        "\\\\pc.factset.com\\dfs\\Department\\Information Systems\\Core\\Core-Packages": {},
-        "http://artifactory.factset.com/artifactory/api/nuget/nuget": {},
-        "http://istfs.pc.factset.com:8060/nuget": {},
-        "http://istfs.pc.factset.com:8060/private/ISCorePrivatepackages/nuget/": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

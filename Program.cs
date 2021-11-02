@@ -1,11 +1,4 @@
-﻿using DSAlgorithms.Programs.Arrays;
-using DSAlgorithms.Programs.Arrays.Hard;
-using DSAlgorithms.Programs.Arrays.Medium;
-using DSAlgorithms.Programs.Arrays.RangeQueries;
-using DSAlgorithms.Programs.Arrays.Sorting;
-using DSAlgorithms.Programs.LinkedList;
-using DSAlgorithms.Programs.Recursion;
-using DSAlgorithms.Programs.Strings;
+﻿using DSAlgorithms.Programs.LinkedList;
 using DSAlgorithms.Sort;
 using System;
 using System.Collections.Generic;
@@ -16,9 +9,15 @@ namespace DSAlgorithms
     {
         static void Main(string[] args)
         {
-            StringPermutations ms = new StringPermutations();
-            ms.PrintPermutations("abcde");
-           
+            InsertSortedList lo = new InsertSortedList();
+            lo.Add(3);
+            lo.Add(2);
+            lo.Add(12);
+            lo.Add(5);
+            lo.Add(6);
+            lo.Add(1);
+            lo.Remove(2);
+            lo.PrintElements();
         }
 
         private static void HeapSort()
