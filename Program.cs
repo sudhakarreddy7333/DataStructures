@@ -9,15 +9,17 @@ namespace DSAlgorithms
     {
         static void Main(string[] args)
         {
-            InsertSortedList lo = new InsertSortedList();
-            lo.Add(3);
-            lo.Add(2);
-            lo.Add(12);
-            lo.Add(5);
-            lo.Add(6);
-            lo.Add(1);
-            lo.Remove(2);
-            lo.PrintElements();
+            CircularLinkedList cl = new CircularLinkedList();
+
+            cl.Insert(1);
+            cl.Insert(2);
+            cl.Insert(4);
+            cl.Insert(5);
+            cl.Insert(6, 0);
+            cl.Insert(8, 4);
+            //cl.Delete(1);
+            cl.Delete(5);
+            cl.Display();
         }
 
         private static void HeapSort()

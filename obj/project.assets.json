@@ -245,12 +245,11 @@
       ]
     },
     "Microsoft.NETCore.Targets/1.1.0": {
-      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
+      "sha512": "YEUP3obOgtxMY19vBkZyyWkPQ5K41ywq+dNXkFChsm7ClRF6QW1eQcgn0eHDyW1FGLM63yruYbJVrabEsh5wEw==",
       "type": "package",
       "path": "microsoft.netcore.targets/1.1.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -782,7 +781,10 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+        "\\\\pc.factset.com\\dfs\\Department\\Information Systems\\Core\\Core-Packages": {},
+        "http://artifactory.factset.com/artifactory/api/nuget/nuget": {},
+        "http://istfs.pc.factset.com:8060/nuget": {},
+        "http://istfs.pc.factset.com:8060/private/ISCorePrivatepackages/nuget/": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -823,7 +825,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.111\\RuntimeIdentifierGraph.json"
       }
     }
   }

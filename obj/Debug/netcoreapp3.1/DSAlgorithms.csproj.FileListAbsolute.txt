@@ -9,7 +9,6 @@ C:\Users\sbalreddy\Source\repos\DSAlgorithms\obj\Debug\netcoreapp3.1\DSAlgorithm
 C:\Users\sbalreddy\Source\repos\DSAlgorithms\obj\Debug\netcoreapp3.1\DSAlgorithms.AssemblyInfo.cs
 C:\Users\sbalreddy\Source\repos\DSAlgorithms\obj\Debug\netcoreapp3.1\DSAlgorithms.dll
 C:\Users\sbalreddy\Source\repos\DSAlgorithms\obj\Debug\netcoreapp3.1\DSAlgorithms.pdb
-C:\Users\sbalreddy\Source\repos\DSAlgorithms\obj\Debug\netcoreapp3.1\DSAlgorithms.genruntimeconfig.cache
 C:\Users\sbalreddy\Source\repos\DSAlgorithms\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\sbalreddy\Source\repos\DSAlgorithms\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
 C:\Users\sbalreddy\Source\repos\DSAlgorithms\bin\Debug\netcoreapp3.1\Quartz.dll

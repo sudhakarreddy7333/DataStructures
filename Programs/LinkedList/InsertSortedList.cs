@@ -4,6 +4,16 @@ using System.Text;
 
 namespace DSAlgorithms.Programs.LinkedList
 {
+    //InsertSortedList lo = new InsertSortedList();
+    //lo.Add(3);
+    //        lo.Add(2);
+    //        lo.Add(1);
+    //        lo.Add(5);
+    //        lo.Add(2);
+    //        lo.Add(1);
+    //        lo.Add(2);
+    //        lo.RemoveDuplicates();
+    //        lo.PrintElements();
     public class InsertSortedList
     {
         private Node first;
@@ -23,7 +33,7 @@ namespace DSAlgorithms.Programs.LinkedList
             {
                 Node p = first;
 
-                while(p != null && p.next != null && p.next.val < element)
+                while(p != null && p.next != null && p.next.val <= element)
                 {
                     p = p.next;
                 }
@@ -38,6 +48,23 @@ namespace DSAlgorithms.Programs.LinkedList
                     newNode.next = p.next;
                     p.next = newNode;
                 }
+            }
+        }
+
+        public void RemoveDuplicates()
+        {
+            Node p = first , q = first;
+            while(q != null)
+            {
+                if (p.val == q.val)
+                {
+                    p.next = q.next;
+                }
+                else
+                {
+                    p = q;
+                }
+                q = q.next;
             }
         }
 
