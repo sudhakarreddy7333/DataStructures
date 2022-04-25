@@ -14,4 +14,20 @@
             this.next = next;
         }
     }
+
+    public class Node<T>
+    {
+        public T val;
+        public Node<T> next;
+
+        public Node()
+        {
+
+        }
+        public Node(T val , Node<T> next = null)
+        {
+            this.val = val;
+            this.next = next;
+        }
+    }
 }

@@ -4,6 +4,15 @@ using System.Text;
 
 namespace DSAlgorithms.Programs.LinkedList
 {
+    //LinkedListOperations dl = new LinkedListOperations();
+    //dl.Insert(1);
+    //dl.Insert(2);
+    //dl.Insert(5);
+    ////dl.Insert(6);
+    ////dl.Insert(7);
+    ////dl.Insert(8);
+    //var n = dl.FindMiddleNode();
+    //Console.WriteLine(n.val);
     public class LinkedListOperations
     {
         public Node list;
@@ -82,6 +91,24 @@ namespace DSAlgorithms.Programs.LinkedList
                 newNode.next = q.next;
                 q.next = newNode;
             }
+        }
+
+        //use two pointers p, q. move p by 2 steps and q by 1 step. when p is null q has covered half the distance
+        public Node FindMiddleNode()
+        {
+            Node p = head , q = head;
+
+            while(p != null)
+            {
+                p = p.next;
+                if (p == null)
+                    return q;
+
+                q = q.next;
+                p = p.next;
+            }
+
+            throw new Exception("No middle element"); //list contains even no of elements.
         }
     }
 }

@@ -4,6 +4,17 @@ using System.Text;
 
 namespace DSAlgorithms.Programs.LinkedList
 {
+    //CircularLinkedList cl = new CircularLinkedList();
+
+    //cl.Insert(1);
+    //cl.Insert(2);
+    //cl.Insert(4);
+    //cl.Insert(5);
+    //cl.Insert(6, 0);
+    //cl.Insert(8, 4);
+    ////cl.Delete(1);
+    //cl.Delete(5);
+    //cl.Display();
     public class CircularLinkedList
     {
         private Node head = null;
