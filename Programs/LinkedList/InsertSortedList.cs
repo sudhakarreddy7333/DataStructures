@@ -26,22 +26,29 @@ namespace DSAlgorithms.Programs.LinkedList
         {
             Node newNode = new Node(element);
             if (first == null)
-            {              
+            {
                 first = newNode;
             }
             else
             {
                 Node p = first;
 
-                while(p != null && p.next != null && p.next.val <= element)
+                while (p != null && p.next != null && p.next.val <= element)
                 {
                     p = p.next;
                 }
 
-                if(p == first)
+                if (p == first)
                 {
-                    newNode.next = p;
-                    first = newNode;
+                    if (p.val <= element)
+                    {
+                        p.next = newNode;
+                    }
+                    else
+                    {
+                        newNode.next = p;
+                        first = newNode;
+                    }
                 }
                 else
                 {

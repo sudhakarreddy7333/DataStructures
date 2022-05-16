@@ -1,8 +1,11 @@
-﻿using DSAlgorithms.Programs.LinkedList;
+﻿using DSAlgorithms.Programs.Graphs;
+using DSAlgorithms.Programs.Hashing;
+using DSAlgorithms.Programs.LinkedList;
 using DSAlgorithms.Programs.LinkedList.Doubly;
 using DSAlgorithms.Programs.Queue;
 using DSAlgorithms.Programs.Stack;
 using DSAlgorithms.Programs.Trees;
+using DSAlgorithms.Programs.Trees.AVL;
 using DSAlgorithms.Sort;
 using System;
 using System.Collections.Generic;
@@ -13,23 +16,14 @@ namespace DSAlgorithms
     {
         static void Main(string[] args)
         {
-            ConstructTreeFromTraversal t = new ConstructTreeFromTraversal();
-            Programs.Trees.Node root = t.Generate(new int[] { 7, 10, 5, 6, 12, 4 }, new int[] { 5, 10, 7, 12, 6, 4 });
-
-            BinaryTreeOperations op = new BinaryTreeOperations();
-            Console.WriteLine("Nodes count: "+ op.CountNodes(root));
-            Console.WriteLine("Leaf nodes count: " + op.CountLeafNodes(root)); //nodes with 0 childrens;
-            Console.WriteLine("Nodes with degree 2 count: " + op.CountNodesWithDegree2(root)); //nodes with 2 childrens;
-            Console.WriteLine("Sum of nodes: " + op.SumOfNodes(root)); //sum of nodes;
-            Console.WriteLine("Sum of leaf nodes: " + op.SumOfLeafNodes(root)); //sum of nodes;
-            Console.WriteLine("count internal nodes: " + op.CountInternalNodes(root)); //sum of nodes;
-            Console.WriteLine("count nodes with degree 1: " + op.NodesCountWithDegree1(root)); //sum of nodes;
+            DFSProgram bubbleSort = new DFSProgram();
+            bubbleSort.RunProgram();
         }
 
         private static void HeapSort()
         {
             HeapSort hs = new HeapSort();
-            int k = 10;
+            int k = 5;
             int[] arr = new int[k];
 
             var rand = new Random();

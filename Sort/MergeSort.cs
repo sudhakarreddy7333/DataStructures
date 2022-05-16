@@ -21,22 +21,19 @@ namespace DSAlgorithms.Sort
                 int mid = (left + right) / 2;
                 SortMethod(ref unSortedArray, left, mid); //sort left half of the array
                 SortMethod(ref unSortedArray, (mid+1), right); //sort right half of the array
-                MergeMethod(ref unSortedArray, left, mid, right); // merge two halves of sorted arrays
+                Merge(ref unSortedArray, left, mid, right); // merge two halves of sorted arrays (left, mid+1) + (mid, right)
             }
         }
 
-        private void MergeMethod(ref int[] unSortedArray, int left, int mid, int right)
+        private void Merge(ref int[] unSortedArray, int left, int mid, int right)
         {
-            var leftarray = new int[mid - left + 1];
-            var rightarray = new int[right - mid];
+            
+            int n1 = mid - left + 1;
+            int n2 = right - mid;
 
-            TwoWayMergeSort(unSortedArray, left, mid, leftarray, rightarray);
-        }
+            var leftarray = new int[n1];
+            var rightarray = new int[n2];
 
-        private static void TwoWayMergeSort(int[] unSortedArray, int left, int mid, int[] leftarray, int[] rightarray)
-        {
-            int n1 = leftarray.Length;
-            int n2 = rightarray.Length;
             for (int g = 0; g < n1; g++)
             {
                 leftarray[g] = unSortedArray[left + g];
